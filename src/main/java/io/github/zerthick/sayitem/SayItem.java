@@ -234,7 +234,7 @@ public class SayItem {
 
         // Build the item text with the color
         return Text.builder().color(itemColor)
-                .append(Text.of("["), displayName, Text.of("]"))
+                .append(Text.of(""), displayName, Text.of(""))
                 .onHover(TextActions.showItem(itemStack.createSnapshot())).build();
     }
 
